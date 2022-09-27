@@ -13,6 +13,8 @@ hostname: `ansible`
 
 ip: `192.168.11.110/24`
 
+enable FUSE
+
 defaults for everything else
 
 
