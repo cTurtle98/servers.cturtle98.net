@@ -13,6 +13,6 @@ apt install -y python3-pip
 
 echo "installing ansible..."
 
-pip3 install -y ansible
+pip3 install ansible
 
 echo "DONE"
