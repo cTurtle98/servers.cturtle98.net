@@ -15,4 +15,12 @@ echo "installing ansible..."
 
 pip3 install ansible
 
+echo "squashfuse for snapcraft"
+
+apt install -y squashfuse
+
+echo "snapcraft"
+
+apt install -y snapcraft
+
 echo "DONE"
