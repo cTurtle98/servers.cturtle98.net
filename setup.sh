@@ -23,4 +23,12 @@ apt install -y squashfuse
 #
 #apt install -y snapcraft
 
+echo "install ansible web interface"
+
+snap install semaphore
+
+echo "configure semaphore"
+
+sudo snap get semaphore
+
 echo "DONE"
