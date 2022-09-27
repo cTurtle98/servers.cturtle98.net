@@ -9,10 +9,18 @@ apt update
 
 echo "installing python pip..."
 
-apt install python3-pip
+apt install -y python3-pip
 
 echo "installing ansible..."
 
 pip3 install ansible
+
+echo "squashfuse for snapcraft"
+
+apt install -y squashfuse
+
+echo "snapcraft"
+
+apt install -y snapcraft
 
 echo "DONE"
