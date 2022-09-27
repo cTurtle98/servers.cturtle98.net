@@ -9,10 +9,10 @@ apt update
 
 echo "installing python pip..."
 
-apt install python3-pip
+apt install -y python3-pip
 
 echo "installing ansible..."
 
-pip3 install ansible
+pip3 install -y ansible
 
 echo "DONE"
