@@ -1,0 +1,15 @@
+pve:
+  hosts:
+
+    pve1:
+      ansible_user: root
+      ansible_host: 192.168.11.20
+
+    pve2:
+      ansible_host: 192.168.11.30
+
+    pve3:
+      ansible_host: 192.168.11.40
+
+guests:
+  hosts:
