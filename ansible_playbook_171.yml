@@ -1,0 +1,30 @@
+# ansible playbook
+# configures CT 171 wings1 192.168.11.171
+# Ciaran Farley 2022
+
+- name apt dependancies
+  become: false
+  tasks:
+  - name: apt update
+    ansible.builtin.apt:
+      update_cache: yes
+      allow_unauthenticated: yes
+
+  - name: apt upgrade
+    ansible.builtin.apt:
+      upgrade: yes
+      allow_unauthenticated: yes
+  
+  - name: apt install depends
+    ansible.builtin.apt:
+      name:
+      - curl
+      - python3-pip
+
+# curl download wings and set it executable
+
+# make systemd service file
+
+# enable service
+
+# certbot certonly standalone wings1.pterodactyl.cturtle98.com

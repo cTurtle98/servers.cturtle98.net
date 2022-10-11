@@ -13,3 +13,8 @@ pve:
 
 guests:
   hosts:
+
+    # wings1 container
+    171:
+      ansible_host: 192.168.11.171
+      ansible_user: root

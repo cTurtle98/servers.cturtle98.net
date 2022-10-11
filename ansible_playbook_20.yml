@@ -1,0 +1,5 @@
+# ansible playbook
+# configures pve1 192.168.11.20
+# Ciaran Farley 2022
+
+- name: 
