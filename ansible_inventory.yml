@@ -2,17 +2,23 @@ pve:
   hosts:
 
     pve1:
-      ansible_user: root
       ansible_host: 192.168.11.20
+      ansible_user: root
 
     pve2:
       ansible_host: 192.168.11.30
+      ansible_user: root
 
     pve3:
       ansible_host: 192.168.11.40
+      ansible_user: root
 
 guests:
   hosts:
+
+    
+    108:
+      ansible_host: 192.168.11.108
 
     # wings1 container
     171:
