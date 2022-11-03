@@ -1,0 +1,28 @@
+
+
+- name: install plex
+  become: false
+  hosts: 192.168.11.117
+  tasks:
+
+  - name: add repo key
+    ansible.builtin.apt_key:
+      url: https://downloads.plex.tv/plex-keys/PlexSign.key
+
+  - name: add apt repo
+    ansible.builtin.apt_repository:
+      repo: "deb https://downloads.plex.tv/repo/deb public main"
+      filename: plexmediaserver.list
+      update_cache: yes
+
+  - name: install updates
+    ansible.builtin.apt:
+      autoclean: yes
+      autoremove: yes
+      update_cache: yes
+      upgrade: yes
+
+  - name: install plex
+    ansible.builtin.apt:
+      name:
+      - plexmediaserver

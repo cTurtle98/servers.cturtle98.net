@@ -16,11 +16,14 @@ pve:
 guests:
   hosts:
 
-    
-    108:
+    "108":
       ansible_host: 192.168.11.108
 
+    #plex
+    192.168.11.117:
+      ansible_user: root
+
     # wings1 container
-    171:
+    "171":
       ansible_host: 192.168.11.171
       ansible_user: root
